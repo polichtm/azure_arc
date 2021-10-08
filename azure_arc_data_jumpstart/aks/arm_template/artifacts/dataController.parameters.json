@@ -9,7 +9,7 @@
       "value": "arc"
     },
     "connectionMode": {
-      "value": "direct"
+      "value": "indirect"
     },
     "controllerName": {
       "value": "jumpstart-dc"
