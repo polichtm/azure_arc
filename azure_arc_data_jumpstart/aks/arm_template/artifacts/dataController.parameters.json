@@ -12,7 +12,7 @@
       "value": "indirect"
     },
     "controllerName": {
-      "value": "jumpstart-dc"
+      "value": "jumpstart-demo-dc"
     },
     "azdataUsername": {
       "value": "azdataUsername-stage"
