@@ -1,13 +1,13 @@
 Start-Transcript -Path C:\Temp\deployPostgreSQL.log
 
 # Deployment environment variables
-$controllerName = "jumpstart-dc"
+$controllerName = "jumpstart-demo-dc"
 
 # Deploying Azure Arc PostgreSQL Hyperscale
 Write-Host "Deploying Azure Arc PostgreSQL Hyperscale"
 Write-Host "`n"
 
-$customLocationId = $(az customlocation show --name "jumpstart-cl" --resource-group $env:resourceGroup --query id -o tsv)
+$customLocationId = $(az customlocation show --name "jumpstart-demo-cl" --resource-group $env:resourceGroup --query id -o tsv)
 $dataControllerId = $(az resource show --resource-group $env:resourceGroup --name $controllerName --resource-type "Microsoft.AzureArcData/dataControllers" --query id -o tsv)
 ################################################
 # Localize ARM template
